@@ -10,7 +10,6 @@ const AdminSidebar = () => {
 
       <h2>Admin Dashboard</h2>
 
-      {/* Users */}
       <Link
         to="/admin/admin-dashboard/users"
         className={Styles.main_link}
@@ -18,7 +17,6 @@ const AdminSidebar = () => {
         Users
       </Link>
 
-      {/* Courses */}
       <div className={Styles.course_menu}>
 
         <button
@@ -33,7 +31,6 @@ const AdminSidebar = () => {
           </span>
         </button>
 
-        {/* Course Dropdown */}
         {courseOpen && (
           <div className={Styles.sub_menu}>
 
@@ -41,8 +38,8 @@ const AdminSidebar = () => {
               Create Course
             </Link>
 
-            <Link to="/course/update-course">
-              Update Course
+            <Link to="/admin/admin-dashboard/courses">
+              View Courses
             </Link>
 
           </div>

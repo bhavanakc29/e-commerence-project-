@@ -19,6 +19,8 @@ import AdminRoute from "./routes/AdminRoute";
 import SingleUser from "./components/Admin/SingleUser";
 import CreateCourse from "./components/Admin/course/CreateCourse";
 import CourseDetails from "./components/Admin/course/CourseDetails";
+import CourseList from "./components/Admin/course/CourseList";
+import GetAllCourses from "./components/courses/GetAllCourses";
 
 //import UpdateProfileInfo from "./components/profile/UpdateProfileInfo";
 //import ProfileIndexPage from "./components/profile/ProfileIndexPage";
@@ -40,6 +42,7 @@ const App = () => {
                 <Route path="/auth/activate" element={<ActivationCode />} />
                 <Route path="/auth/login" element={<Login />} />
                 <Route path="/course/:id" element={<CourseDetails/>}/>
+                <Route path="/courses" element={<GetAllCourses/>}/>
 
                 {/* Authenticated Routes */}
 
@@ -60,10 +63,11 @@ const App = () => {
                 <Route element={<AdminRoute />}>
                   <Route path="admin/admin-dashboard" element={<AdminDashboard />}>
                       <Route path="users" element={<GetAllUsers/>}/>
+                      <Route path="courses" element={<CourseList />} />
                       </Route>
                       <Route path="user/:id" element={<SingleUser/>}/>
                       <Route path="/course/create-course" element={<CreateCourse/>}/>
-                       <Route path="/course/update-course/:id" element={<CreateCourse/>}/>
+                       <Route path="/course/create-course/:id" element={<CreateCourse/>}/>
 
                       
 

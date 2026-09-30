@@ -15,8 +15,13 @@ const AuthNav = () => {
   return (
     <>
       <li>
+        <Link to="/courses">Courses</Link>
+      </li>
+
+      <li>
         <Link to="#">Dashboard</Link>
       </li>
+
       <li>
         {user?.role === "admin" ? (
           <Link to="/admin/admin-dashboard">{user?.name}</Link>
@@ -24,6 +29,7 @@ const AuthNav = () => {
           <Link to="/user/profile">{user?.name}</Link>
         )}
       </li>
+
       <li>
         <button onClick={handleLogout}>Logout</button>
       </li>
