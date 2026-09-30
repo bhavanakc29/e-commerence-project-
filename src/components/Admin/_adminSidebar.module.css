@@ -1,0 +1,110 @@
+.sidebar {
+  width: 260px;
+  min-height: 500px;
+  padding: 30px 20px;
+  background: #3f3270;
+  box-sizing: border-box;
+}
+
+/* Dashboard Title */
+
+.sidebar h2 {
+  margin: 0 0 35px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+
+/* Users */
+
+.main_link {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.main_link:hover {
+  background: #514382;
+}
+
+
+/* Courses Button */
+
+.course_button {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 15px;
+
+  background: transparent;
+  border: none;
+
+  color: #ffffff;
+
+  font-size: 16px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  border-radius: 8px;
+  text-align: left;
+}
+
+.course_button:hover {
+  background: #514382;
+}
+
+
+/* Arrow */
+
+.arrow {
+  font-size: 11px;
+}
+
+
+/* Dropdown */
+
+.sub_menu {
+  margin-top: 8px;
+  margin-left: 12px;
+  padding-left: 12px;
+
+  border-left: 2px solid #8b7cc2;
+}
+
+
+/* Create / Update Course */
+
+.sub_menu a {
+  display: block;
+
+  padding: 10px 12px;
+  margin-bottom: 5px;
+
+  color: #5eead4;
+  text-decoration: none;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  border-radius: 6px;
+}
+
+.sub_menu a:hover {
+  background: #514382;
+  color: #99f6e4;
+}
